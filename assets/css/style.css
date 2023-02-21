@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: outfit;
+    src: url("assets/media/outfit.ttf");
+}
+
+.container {
+    padding: 0px 128px;
+    background-color: #1E1E1E;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+
+.logo {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+    flex: 1;
+}    
+img {
+    width: 100%;
+}
+.menu {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+}
+
+.content-sec {
+    display: flex;
+    
+}
+
+.main-content {
+    padding-top: 160px;
+    flex: 1;
+}
+
+.title {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 110px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+}
+.text {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 26px */
+    color: #BDBDBD;
+    
+    margin-top: 15px;
+}
+
+.buttons-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 129px;
+}
+
+.buttons-row > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+
+    width: 172px;
+    height: 56px;
+    
+    background: #CE643A;
+    border-radius: 12px;
+    
+    
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+}
+
+.buttons-row > p {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    
+    color: #CE643A;
+}
+
+.main-img {
+    flex: 1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+    .content-sec {
+        display: block;
+    }
+    .main-img {
+        order: 1;
+    }
+    .main-content{
+        order: 2;
+    }
+}
